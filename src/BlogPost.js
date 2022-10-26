@@ -18,7 +18,6 @@ export default class BlogPost extends Component {
     fetch("https://people.canonical.com/~anthonydillon/wp-json/wp/v2/posts")
       .then((results) => results.json())
       .then((results) => {
-        // console.log(results);
         this.setState({ data: results });
       });
   }
@@ -75,5 +74,3 @@ export default class BlogPost extends Component {
     );
   }
 }
-
-//
